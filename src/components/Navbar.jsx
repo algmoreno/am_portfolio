@@ -8,7 +8,6 @@ import logo from '../assets/signature_final_blue.png'
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
-  console.log(toggle)
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -18,7 +17,7 @@ const Navbar = () => {
               setActive("");
               window.scrollTo(0,0)
             }}>
-              <img src={logo} alt="logo" className='w-40 h-20 object-contain'/>
+              <img src={logo} alt="logo" className='w-45 h-20 object-contain'/>
               <p className='text-white text-[18px] font-bold cursor-pointer flex'>Alan Moreno &nbsp;
                 <span className='sm:block hidden'> | Software Developer Portfolio</span> 
               </p>

@@ -14,7 +14,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm 
+            Hi, I'm &nbsp;
             <span className="text-[#0f3a60]">
               Alan
             </span>
@@ -25,6 +25,7 @@ const Hero = () => {
         </div>
 
       </div>
+      <ComputersCanvas />
     </section>
   )
 }
