@@ -24,8 +24,8 @@ const Globe = ({ isMobile }) => {
                   castShadow
                   shadow-mapSize={1024}/>
       <primitive object={earth.scene}
-                  scale={isMobile ? .75 : 1.2}
-                  position={isMobile ? [0, 1, 0] : [0, 1.25, 0]}
+                  scale={isMobile ? 1 : 1.2}
+                  position={isMobile ? [0, -2.5, 0] : [2.5, 1.25, 0]}
                   rotation={[-.1, 0, -.2]}
                   ref={globeRef}
                   />
@@ -37,7 +37,7 @@ const GlobeCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia("(max-width: 800px)");
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
@@ -57,10 +57,10 @@ const GlobeCanvas = () => {
       camera={{ position: [30, 10, 45], fov: 10 }}
       gl={{ preserveDrawingBuffer: true }}>
     <Suspense fallback={<CanvasLoader />}>
-    <OrbitControls
+    {/* <OrbitControls
       enableZoom={false}
       maxPolarAngle={Math.PI / 2}
-      minPolarAngle={Math.PI / 2}/>
+      minPolarAngle={Math.PI / 2}/> */}
     <Globe isMobile={isMobile}/>
     </Suspense>
     <Preload all/>
