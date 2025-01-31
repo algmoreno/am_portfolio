@@ -1,13 +1,20 @@
-import React, { Suspense, useEffect, useState } from 'react'
-import { Canvas } from '@react-three/fiber'
+import React, { Suspense, useEffect, useState, useRef } from 'react'
+import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader'
 
 const Globe = ({ isMobile }) => {
   const earth = useGLTF('./earth/scene.gltf')
+  const globeRef = useRef();
+
+  useFrame(() => {
+    if (globeRef.current) {
+      globeRef.current.rotation.y += 0.0009; // Adjust speed as needed
+    }
+  });
 
   return (
-    <mesh> 
+    <mesh useRef={globeRef}> 
       <hemisphereLight intensity={1} groundColor="black" />
       <pointLight intensity={0}/>
       <spotLight position={[-20, 50, 10]} 
@@ -17,9 +24,10 @@ const Globe = ({ isMobile }) => {
                   castShadow
                   shadow-mapSize={1024}/>
       <primitive object={earth.scene}
-                  scale={isMobile ? .5 : 1}
+                  scale={isMobile ? .75 : 1.2}
                   position={isMobile ? [0, 1, 0] : [0, 1.25, 0]}
                   rotation={[-.1, 0, -.2]}
+                  ref={globeRef}
                   />
     </mesh>
   )
@@ -55,7 +63,6 @@ const GlobeCanvas = () => {
       minPolarAngle={Math.PI / 2}/>
     <Globe isMobile={isMobile}/>
     </Suspense>
-
     <Preload all/>
     </Canvas>
   )
