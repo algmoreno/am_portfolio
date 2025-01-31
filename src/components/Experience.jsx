@@ -8,8 +8,8 @@ import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => {
   return (
-    <VerticalTimelineElement contentStyle={{ border: '4px solid gold', background: '1d1836', color: '#fff' }} 
-                              contentArrowStyle={{ borderRight: '7px solid #232631' }}                              
+    <VerticalTimelineElement contentStyle={{ border: '2px solid #ffffff', background: 'linear-gradient(#0f3a5f, #6b644d)', color: '#ffffff', boxShadow: '10px 15px 45px #333333'}} 
+                              contentArrowStyle={{ borderRight: '17px solid #ffffff' }}                        
                               date={experience.date}
                               iconStyle={{ background: experience.iconBg }}
                               icon={<div className="flex justify-center items-center w-full h-full">
@@ -21,7 +21,7 @@ const ExperienceCard = ({ experience }) => {
           <h3 className="text-white text-[24px] font-bold">
             {experience.title}
           </h3>
-          <p className="text-secondary text-[16px] font-semibold"
+          <p className="text-white text-[16px] font-semibold"
              style={{ margin: 0 }}> 
             {experience.company_name}
           </p>
@@ -29,7 +29,7 @@ const ExperienceCard = ({ experience }) => {
         <ul className="mt-5 list-disc ml-5 space-y-2" >
           {experience.points.map((point, index) => (
             <li key={`experience-point-${index}`}
-                className="text-secondary text-[14px] pl-1 tracking-wider">
+                className="text-white text-[14px] pl-1 tracking-wider">
               {point}
             </li>
           ))}
