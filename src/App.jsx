@@ -12,6 +12,8 @@ const App = () => {
         </div>
         <About />
         <Experience />
+        {/* <div className="bg-hero-pattern2 bg-cover bg-no-repeat bg-center">
+        </div> */}
         <Tech />
         <Works />
         <Feedbacks />
