@@ -28,9 +28,9 @@ const Hero = () => {
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-end items-center -mx-6">
         <div className="w-[35px] h-[64px] rounded-3xl border-4 border-black flex justify-center items-start p-2">
           <motion.div 
-            animate={{ y: [0, 14, 0] }}
+            animate={{ y: [0, 12, 0] }}
             transition={{
-              duration: 4,
+              duration: 6,
               repeat: Infinity,
               repeatType: 'loop'
             }}
