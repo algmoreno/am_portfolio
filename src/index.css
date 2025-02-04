@@ -63,12 +63,27 @@
   background-position: center;
 }
 
+.star-black-gradient {
+  background: #eb01a5;
+  background-image: url("/src/assets/bg_3.jpg"); /* fallback */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0) 100%), url('/src/assets/bg_7.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 .black-orange-gradient {
   background: #eb01a5;
   background-image: url("/src/assets/bg_3.jpg"); /* fallback */
-  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)),  url('/src/assets/bg_5.jpg');
+  background: linear-gradient(to bottom, black 10%, rgba(0, 0, 0, 0) 70%),  url('/src/assets/bg_8.jpg');  
 }
 
+.black-green-gradient {
+  background: #eb01a5;
+  background-image: url("/src/assets/bg_3.jpg"); /* fallback */
+  background: linear-gradient(to top, rgba(149, 112, 31, 0) 30%, rgb(190, 191, 190) 100%), url('/src/assets/bg_3.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 
 .orange-text-gradient {

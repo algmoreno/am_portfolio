@@ -14,19 +14,19 @@ const App = () => {
           <Navbar />
           <Hero />          
         </div>     
-        <div className="bg-hero-pattern3 bg-cover bg-no-repeat bg-center">
+        <div className="star-black-gradient bg-cover bg-no-repeat bg-center">
           <About />          
+          <Experience />
         </div> 
         <div className="black-orange-gradient bg-cover bg-no-repeat bg-center">
-          <Experience />
           <Tech />
           <Works />
         </div>
-        <div className="bg-hero-pattern2 bg-cover bg-no-repeat bg-center">
-        </div> 
-        <Feedbacks />
-        <div className='relative z-0'>
+        <div className='black-green-gradient'>
+          <Feedbacks />
           <Contact />
+        </div>
+        <div className='relative z-0'>
           <StarsCanvas />
         </div>
       </div>
