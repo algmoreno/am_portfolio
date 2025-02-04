@@ -74,7 +74,7 @@
 .black-orange-gradient {
   background: #eb01a5;
   background-image: url("/src/assets/bg_3.jpg"); /* fallback */
-  background: linear-gradient(to bottom, black 10%, rgba(0, 0, 0, 0) 70%),  url('/src/assets/bg_8.jpg');  
+  background: linear-gradient(to bottom, black 10%, rgba(0, 0, 0, 0) 40%),  url('/src/assets/bg_8.jpg');  
 }
 
 .black-green-gradient {

@@ -62,7 +62,18 @@ const Contact = () => {
                 placeholder="What do you want to say?"
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"/>
           </label>
+
+          <button
+            type="submit"
+            className="bg-tertiary py-2 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl">
+            {loading? "Sending..." : "Sent"}
+          </button>
         </form>
+      </motion.div>
+
+      <motion.div variants={slideIn('right', 'tween', .2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
+        <EarthCanvas />
       </motion.div>
     </div>
   )
