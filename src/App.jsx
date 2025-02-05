@@ -24,9 +24,9 @@ const App = () => {
         </div>
         <div className='black-green-gradient'>
           <Feedbacks />
-          <Contact />
         </div>
         <div className='relative z-0'>
+          <Contact />
           <StarsCanvas />
         </div>
       </div>
