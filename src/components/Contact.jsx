@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { styles } from '../styles';
@@ -13,7 +13,7 @@ import { slideIn } from '../utils/motion';
 const Contact = () => {
   const formRef = useRef();
 
-  const [form, setform] = useState({
+  const [form, setForm] = useState({
     name: '',
     email: '',
     message: ''
@@ -22,6 +22,7 @@ const Contact = () => {
   const [loading, setloading] = useState(false);
 
   const handleChange = (e) => {
+    console.log("Change")
     const { name, value } = e.target;
     setForm({...form, [name]: value })
   }

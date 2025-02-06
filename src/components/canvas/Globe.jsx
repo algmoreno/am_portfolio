@@ -3,7 +3,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader'
 
-const Globe = ({ isMobile }) => {
+const Globe = ({ lightOn, isMobile }) => {
   const earth = useGLTF('./earth/scene.gltf')
   const globeRef = useRef();
 
@@ -15,9 +15,8 @@ const Globe = ({ isMobile }) => {
 
   return (
     <mesh useRef={globeRef}> 
-      <hemisphereLight intensity={1} groundColor="black" />
-      <pointLight intensity={0}/>
-      <spotLight position={[-20, 50, 10]} 
+      <hemisphereLight intensity={.15} groundColor="black" />
+      <directionalLight position={lightOn ? [-40, 10, -5] : [0, 0, 0]} 
                   angle={.12}
                   penumbra={1}
                   intensity={1}
@@ -33,7 +32,7 @@ const Globe = ({ isMobile }) => {
   )
 }
 
-const GlobeCanvas = () => {
+const GlobeCanvas = ({ lightOn }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -58,7 +57,7 @@ const GlobeCanvas = () => {
         camera={{ position: [30, 10, 45], fov: 10 }}
         gl={{ preserveDrawingBuffer: true }}>
         <Suspense fallback={<CanvasLoader />}>
-        <Globe isMobile={isMobile}/>
+        <Globe lightOn={lightOn} isMobile={isMobile}/>
         </Suspense>
         <Preload all/>
       </Canvas>

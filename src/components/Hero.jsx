@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { GlobeCanvas } from './canvas';
@@ -11,9 +11,9 @@ const Hero = () => {
     <section className={`relative w-full h-screen mx-auto`}>
       <div className={`${styles.paddingX} absolute inset-0 top-[180px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div onClick={() => {setLight(current => !current)}} className="flex flex-col justify-center items-center mt-5">
-          {/* <div onClick={() => setLight(false)} className="w-8 h-8 rounded-full bg-[#ffb028]"/> */}
-          <button className={`w-8 h-8 rounded-full ${light ? "bg-[#ffb028]" : "bg-[#0f3a5f]"}`}/>
-          {/* <div className="w-1 sm:h-80 h-40 blue-gradient"/> */}
+          {/* <button className={`w-10 h-10 rounded-full ${light ? "bg-[#ffb028]" : "bg-[#0f3a5f]"}`}/> */}
+          <button style={light ? {backgroundImage: "linear-gradient(to right, #fcc305 0%, #9c6905 100%)"} : 
+          {backgroundImage : "linear-gradient(to right, #000000 0%, #000000 100%)", border: "1px solid grey"}} className={`w-10 h-10 rounded-full`}/>
         </div>
         <div>
           <h1 style={{ color: light ? 'white' : '#0f3a5f' }} className={`${styles.heroHeadText}`}>
@@ -25,23 +25,9 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-row h-[500px] w-1/2">
-          <GlobeCanvas />
+          <GlobeCanvas lightOn={light} />
         </div>
       </div>
-{/* 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-end items-center -mx-6">
-        <div className="w-[35px] h-[64px] rounded-3xl border-4 border-black flex justify-center items-start p-2">
-          <motion.div 
-            animate={{ y: [0, 12, 0] }}
-            transition={{
-              duration: 6,
-              repeat: Infinity,
-              repeatType: 'loop'
-            }}
-            className="w-3 h-3 rounded-full bg-black mb-1"
-          />            
-        </div>
-      </div> */}
     </section>
   )
 }
