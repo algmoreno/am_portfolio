@@ -58,7 +58,7 @@ const Contact = () => {
   }
 
   return (
-    <div className={`xl:mt-12 xl:flex-row flex-col-reverse mr-20 flex gap-10 overflow-hidden`}>
+    <div id="contact" className={`xl:mt-12 h-[820px] xl:flex-row flex-col-reverse mr-20 flex overflow-hidden`}>
       <motion.div variants={slideIn('right', 'tween', .2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
         <SaguaroCanvas />
