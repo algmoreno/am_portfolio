@@ -24,8 +24,8 @@ const Globe = ({ isMobile }) => {
                   castShadow
                   shadow-mapSize={1024}/>
       <primitive object={earth.scene}
-                  scale={isMobile ? 1 : 1.2}
-                  position={isMobile ? [0, -2.5, 0] : [2.5, 1.25, 0]}
+                  scale={isMobile ? 1.1 : 2}
+                  position={isMobile ? [-.5, -2.5, 0] : [1, 1.25, 0]}
                   rotation={[-.1, 0, -.2]}
                   ref={globeRef}
                   />
@@ -51,16 +51,17 @@ const GlobeCanvas = () => {
     }
   }, []);
 
-  return (
-    <Canvas frameLoop="demand"
-      shadows
-      camera={{ position: [30, 10, 45], fov: 10 }}
-      gl={{ preserveDrawingBuffer: true }}>
-    <Suspense fallback={<CanvasLoader />}>
-    <Globe isMobile={isMobile}/>
-    </Suspense>
-    <Preload all/>
-    </Canvas>
+  return (  
+      <Canvas 
+        frameLoop="demand"
+        shadows
+        camera={{ position: [30, 10, 45], fov: 10 }}
+        gl={{ preserveDrawingBuffer: true }}>
+        <Suspense fallback={<CanvasLoader />}>
+        <Globe isMobile={isMobile}/>
+        </Suspense>
+        <Preload all/>
+      </Canvas>
   )
 }
 

@@ -19,20 +19,25 @@ const Hero = () => {
           {/* <div onClick={() => setLight(false)} className="w-8 h-8 rounded-full bg-[#ffb028]"/> */}
           <button className={`w-8 h-8 rounded-full ${light ? "bg-[#ffb028]" : "bg-[#141a3c]"}`}/>
           {/* <div className="w-1 sm:h-80 h-40 blue-gradient"/> */}
+        </div>
+      
+        <div>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I'm &nbsp; 
+            <span className="text-[#0f3a60]">
+              Alan
+            </span>
+          </h1>
+          <p className={`${styles.heroSubTest} mt-2 text-white-100`}>
+            This is my bio and I will write about me 
+          </p>
+        </div>
+
+        <div className="flex flex-row h-[500px] w-1/2">
+          <GlobeCanvas />
+        </div>
       </div>
-      <div>
-        <h1 className={`${styles.heroHeadText} text-white`}>
-          Hi, I'm &nbsp; 
-          <span className="text-[#0f3a60]">
-            Alan
-          </span>
-        </h1>
-        <p className={`${styles.heroSubTest} mt-2 text-white-100`}>
-          This is my bio and I will write about me 
-        </p>
-      </div>
-      </div>
-        <GlobeCanvas />
+{/* 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-end items-center -mx-6">
         <div className="w-[35px] h-[64px] rounded-3xl border-4 border-black flex justify-center items-start p-2">
           <motion.div 
@@ -45,7 +50,7 @@ const Hero = () => {
             className="w-3 h-3 rounded-full bg-black mb-1"
           />            
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
