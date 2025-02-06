@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { GlobeCanvas } from './canvas';
 
 // replace mouse with arrow
 const Hero = () => {
+  const [light, setLight] = useState(true);
+
+  const toggleLight = () => {
+    console.log("ToggleLight function called");
+    setLight(prev => !prev);
+  };
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-      <div className={`${styles.paddingX} absolute inset-0 top-[180px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
+      <div onClick={toggleLight} className={`${styles.paddingX} absolute inset-0 top-[180px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#ffd428]"/>
-          <div className="w-1 sm:h-80 h-40 blue-gradient"/>
+          {/* <div onClick={() => setLight(false)} className="w-8 h-8 rounded-full bg-[#ffb028]"/> */}
+          <button className={`w-8 h-8 rounded-full ${light ? "bg-[#ffb028]" : "bg-[#141a3c]"}`}/>
+          {/* <div className="w-1 sm:h-80 h-40 blue-gradient"/> */}
       </div>
       <div>
         <h1 className={`${styles.heroHeadText} text-white`}>

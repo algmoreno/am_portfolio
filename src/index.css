@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "ABeeZee", serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
@@ -85,13 +85,13 @@
 }
 
 .lightblue-orange-gradient {
+  z-index: -1;
   background: #eb01a5;
   background-image: url("/src/assets/bg_3.jpg"); 
   background: linear-gradient(to top, rgba(149, 112, 31, 0) 30%, rgb(17, 55, 71) 100%), url('/src/assets/bg_8.jpg');
   background-size: cover;
   background-position: center;
 }
-
 
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */

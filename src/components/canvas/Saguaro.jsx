@@ -4,20 +4,20 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from '../Loader'
 
 const Saguaro = () => {
-  const earth = useGLTF('./saguaro/scene.gltf')
+  const saguaro = useGLTF('./saguaro/scene.gltf')
 
   return (
-    <primitive 
-      object={earth.scene}
+    <primitive       
+      object={saguaro.scene}
       scale={.4}
-      position-y={-2}
+      position-y={-4}
       position-x={0}/>
   )
 }
 
 const SaguaroCanvas = () => {
   return (
-    <Canvas
+    <Canvas      
       shadows
       frameLoop='demand'
       gl={{ preserveDrawingBuffer: true }}
@@ -29,8 +29,7 @@ const SaguaroCanvas = () => {
 
       }}>
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls 
-          autoRotate
+        <OrbitControls       
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}/>
