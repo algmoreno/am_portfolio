@@ -7,28 +7,19 @@ import { GlobeCanvas } from './canvas';
 const Hero = () => {
   const [light, setLight] = useState(true);
 
-  const toggleLight = () => {
-    console.log("ToggleLight function called");
-    setLight(prev => !prev);
-  };
-
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-      <div onClick={toggleLight} className={`${styles.paddingX} absolute inset-0 top-[180px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        <div className="flex flex-col justify-center items-center mt-5">
+      <div className={`${styles.paddingX} absolute inset-0 top-[180px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
+        <div onClick={() => {setLight(current => !current)}} className="flex flex-col justify-center items-center mt-5">
           {/* <div onClick={() => setLight(false)} className="w-8 h-8 rounded-full bg-[#ffb028]"/> */}
-          <button className={`w-8 h-8 rounded-full ${light ? "bg-[#ffb028]" : "bg-[#141a3c]"}`}/>
+          <button className={`w-8 h-8 rounded-full ${light ? "bg-[#ffb028]" : "bg-[#0f3a5f]"}`}/>
           {/* <div className="w-1 sm:h-80 h-40 blue-gradient"/> */}
         </div>
-      
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm &nbsp; 
-            <span className="text-[#0f3a60]">
-              Alan
-            </span>
+          <h1 style={{ color: light ? 'white' : '#0f3a5f' }} className={`${styles.heroHeadText}`}>
+            Hi, I'm Alan
           </h1>
-          <p className={`${styles.heroSubTest} mt-2 text-white-100`}>
+          <p style={{ color: light ? 'white' : '#0f3a5f' }} className={`${styles.heroSubTest} mt-2 text-white-100`}>
             This is my bio and I will write about me 
           </p>
         </div>
