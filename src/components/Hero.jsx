@@ -15,7 +15,7 @@ const Hero = () => {
           {/* <button className={`w-10 h-10 rounded-full ${light ? "bg-[#ffb028]" : "bg-[#0f3a5f]"}`}/> */}
           <button style={light ? {backgroundImage: "linear-gradient(to right, #fcc305 0%, #9c6905 100%)"} : 
           {backgroundImage : "linear-gradient(to right, #000000 0%, #000000 100%)", border: "1px solid grey"}} className={`w-10 h-10 rounded-full`}>
-            <img className="h-1/2 w-/12 justify-center items-center mx-auto" src={lightbulb} alt="lightbulb" />
+            <img className="h-2/5 w-2/5 justify-center items-center mx-auto" src={lightbulb} alt="lightbulb" />
           </button>
         </div>
         <div>
