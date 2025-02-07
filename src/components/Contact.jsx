@@ -58,11 +58,12 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className={`xl:mt-12 h-[820px] xl:flex-row flex-col-reverse mr-20 flex overflow-hidden`}>
+    <div id="contact" className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div variants={slideIn('right', 'tween', .2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[250px]">
         <SaguaroCanvas />
       </motion.div>
+
       <motion.div variants={slideIn('right', 'tween', .2, 1)}
         className="flex-[.75] bg-black p-8 rounded-2xl mb-10">
 
@@ -116,4 +117,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default SectionWrapper(Contact, "contact")

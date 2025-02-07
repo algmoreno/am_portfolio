@@ -10,7 +10,7 @@ const Saguaro = () => {
     <primitive       
       object={saguaro.scene}
       scale={.4}
-      position-y={-4}
+      position-y={-4.4}
       position-x={0}/>
   )
 }
@@ -29,7 +29,6 @@ const SaguaroCanvas = () => {
 
       }}>
       <Suspense fallback={<CanvasLoader />}>
-
           <Saguaro />
       </Suspense>
     </Canvas>
