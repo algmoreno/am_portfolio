@@ -13,7 +13,7 @@ const Hero = () => {
       <div className={`${styles.paddingX} absolute inset-0 top-[180px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div onMouseEnter={() => {setLight(current => !current)}} onMouseLeave={() => {setLight(current => !current)}} className="flex flex-col justify-center items-center mt-5">
           <button style={light ? {backgroundImage: "linear-gradient(to left, #fcc305 0%, #a15403 100%)"} : 
-            {backgroundImage : "linear-gradient(to top, #000000 0%, #000000 100%)", border: "1px solid grey"}} className={`w-10 h-10 rounded-full`}>
+            {backgroundColor : "transparent", border: ".5px solid #1f1e1e"}} className={`w-10 h-10 rounded-full`}>
             <img className="h-2/5 w-2/5 justify-center items-center mx-auto" src={lightbulb} alt="lightbulb" />
           </button>
         </div>
