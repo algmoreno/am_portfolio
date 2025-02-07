@@ -23,8 +23,8 @@ const Globe = ({ lightOn, isMobile }) => {
                   castShadow
                   shadow-mapSize={1024}/>
       <primitive object={earth.scene}
-                  scale={isMobile ? 1.4 : 2.1}
-                  position={isMobile ? [-.5, -2.5, 0] : [1, 0, 0]}
+                  scale={isMobile ? 1.1 : 1.7}
+                  position={isMobile ? [.5, -2.5, 0] : [1, -1.5, 0]}
                   rotation={[-.1, 0, -.2]}
                   ref={globeRef}
                   />

@@ -51,12 +51,6 @@
   background: -webkit-linear-gradient(-90.13deg, #3f5a4b 1.9%, #c4b58e 97.5%);
 }
 
-/* .black-orange-gradient {
-  background: "#00cea8";
-  background: linear-gradient(90.13deg, #800000 1.9%, #ebf617 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #000000 1.9%, #5d453a 97.5%);
-} */
-
 .green-black-gradient {
   background: #eb01a5;
   background-image: url("/src/assets/bg_3.jpg"); 
@@ -65,7 +59,6 @@
   background-position: center;
 }
 
-
 .star-navy-gradient {
   background: #eb01a5;
   background-image: url("/src/assets/bg_3.jpg");
@@ -73,12 +66,6 @@
   background-size: cover;
   background-position: center;
 }
-
-/* .black-orange-gradient {
-  background: #eb01a5;
-  background-image: url("/src/assets/bg_3.jpg"); 
-  background: linear-gradient(to bottom, black 10%, rgba(0, 0, 0, 0) 40%),  url('/src/assets/bg_8.jpg');  
-} */
 
 .navy-lightblue-gradient {
   background: #eb01a5;
