@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { GlobeCanvas } from './canvas';
+import { GlobeCanvas, TextCanvas } from './canvas';
 import lightbulb from '../assets/lightbulb.png';
 
 // replace mouse with arrow
@@ -18,16 +18,19 @@ const Hero = () => {
           </button>
         </div>
         <div>
-          <h1 style={{ color: light ? 'white' : '#0f3a5f' }} className={`${styles.heroHeadText}`}>
+          {/* <h1 style={{ color: light ? 'white' : '#0f3a5f' }} className={`${styles.heroHeadText}`}>
             Hi, I'm Alan
           </h1>          
           <p style={{ color: light ? 'white' : '#0f3a5f' }} className={`${styles.heroSubTest} mt-2 text-white-100`}>
             This is my bio and I will write about me 
-          </p>
+          </p> */}
         </div>
       </div>
+      <div className="ml-auto inline-bloc flex flex-row h-full w-full">
+            <TextCanvas />
+          </div>
       <div className="ml-auto inline-bloc flex flex-row h-full w-[50%]">
-          <GlobeCanvas lightOn={light} />
+          {/* <GlobeCanvas lightOn={light} /> */}
       </div>
     </section>
   )
