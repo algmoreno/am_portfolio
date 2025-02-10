@@ -29,7 +29,7 @@ const Navbar = () => {
               className={`${ active === Link.title
                           ? "text-secondary"
                           : "text-white"} 
-                          hover:text-secondary text-[18px] font-medium cursor-pointer`}>
+                          hover:text-tertiary text-[18px] font-medium cursor-pointer`}>
               <a href={`#${Link.id}`}>{Link.title}</a>
             </li>
           ))}

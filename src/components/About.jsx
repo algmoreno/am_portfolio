@@ -40,7 +40,7 @@ const About = () => {
       </motion.div>
       
       <div style={{ flexDirection: 'row'}} className="flex flex-wrap">
-        <img className="sm:h-[40%] sm:w-[100%] md:h-[20%] md:w-[20%] rounded-xl" src={profPic} alt="" />
+        <img className="sm:h-[40%] sm:w-[100%] md:h-[20%] md:w-[20%] rounded-xl border border-x-white-100" src={profPic} alt="" />
 
         <motion.p variants={fadeIn("", "", .1, 1)} className="mt-4 md:ml-0 xl:ml-20 text-white text-[17px] max-w-3xl leading-[30px]">
           I'm a full-stack web developer from Tucson, AZ with a Bachelor of Science in Business Management. My experience ranges
@@ -48,7 +48,7 @@ const About = () => {
           of logic and problem solving but also the creativity it requires.
         </motion.p>
       </div>
-      
+
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service}/>

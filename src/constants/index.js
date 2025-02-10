@@ -18,6 +18,7 @@ import {
   meta,
   starbucks,
   tesla,
+  perceptive,
   shopify,
   carrent,
   jobit,
@@ -123,7 +124,7 @@ const experiences = [
   {
     title: "Web/Software Developer",
     company_name: "Perceptive Sensor Technologies",
-    icon: starbucks,
+    icon: perceptive,
     iconBg: "#383E56",
     date: "January 2022 - Present",
     points: [
