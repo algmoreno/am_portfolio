@@ -44,15 +44,11 @@ const About = () => {
 
         <motion.p variants={fadeIn("", "", .1, 1)} className="mt-4 md:ml-0 xl:ml-20 text-white text-[17px] max-w-3xl leading-[30px]">
           I'm a full-stack web developer from Tucson, AZ with a Bachelor of Science in Business Management. My experience ranges
-          from React/Javascript based web devlopment to data applications and AWS architectures. I love what I do because of the combination
+          from React/Javascript based web devlopment to cloud-based applications and other AWS services. I love what I do because of the combination
           of logic and problem solving but also the creativity it requires.
         </motion.p>
       </div>
-
-
-
       
-
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service}/>

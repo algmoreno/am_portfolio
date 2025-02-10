@@ -12,7 +12,7 @@ const Ball = (props) => {
       <ambientLight intensity={.25}/>
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
-        <icosahedronGeometry args={[1, 1,]} />
+        <sphereGeometry args={[1, 1,]} />
         <meshStandardMaterial color="#fff8eb"
                               polygonOffset
                               polygonOffsetFactor={-5}

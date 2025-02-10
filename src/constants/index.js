@@ -46,12 +46,12 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "AWS Devloper",
+    icon: mobile,
   },
   {
     title: "Content Creator",
@@ -60,6 +60,18 @@ const services = [
 ];
 
 const technologies = [
+  // {
+  //   name: "C#",
+  //   icon: figma,
+  // },
+  {
+    name: "GoLang",
+    icon: figma,
+  },
+  {
+    name: "NATS.io",
+    icon: figma,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -73,20 +85,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
@@ -101,15 +101,19 @@ const technologies = [
     icon: threejs,
   },
   {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "AWS",
+    icon: redux,
+  },
+  {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
 ];
