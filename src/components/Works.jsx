@@ -50,7 +50,7 @@ const Works = () => {
           My Work
         </p>
         <h2 className={styles.sectionHeadText}>
-          Projects.
+          Projects
         </h2>
       </motion.div>
 

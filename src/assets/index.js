@@ -7,6 +7,11 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import go from "./tech/golang.png"
+import natsio from "./tech/natsio.png"
+import csharp from "./tech/csharp.png"
+import dotnet from "./tech/dotnet.png"
+import aws from "./tech/aws.png"
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -31,6 +36,11 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  aws,
+  natsio,
+  go,
+  csharp,
+  dotnet,
   logo,
   backend,
   creator,
