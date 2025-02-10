@@ -18,19 +18,17 @@ const Hero = () => {
           </button>
         </div>
         <div>
-          {/* <h1 style={{ color: light ? 'white' : '#0f3a5f' }} className={`${styles.heroHeadText}`}>
+          <h1 style={{ color: light ? 'white' : '#0f3a5f' }} className={`${styles.heroHeadText}`}>
             Hi, I'm Alan
           </h1>          
           <p style={{ color: light ? 'white' : '#0f3a5f' }} className={`${styles.heroSubTest} mt-2 text-white-100`}>
             This is my bio and I will write about me 
-          </p> */}
+          </p>
         </div>
       </div>
-      <div className="ml-auto inline-bloc flex flex-row h-full w-full">
-            <TextCanvas />
-          </div>
       <div className="ml-auto inline-bloc flex flex-row h-full w-[50%]">
-          {/* <GlobeCanvas lightOn={light} /> */}
+          {/* <TextCanvas /> */}
+          <GlobeCanvas lightOn={light} />
       </div>
     </section>
   )
