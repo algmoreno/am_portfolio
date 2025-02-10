@@ -43,9 +43,9 @@ const About = () => {
         <img className="sm:h-[40%] sm:w-[100%] md:h-[20%] md:w-[20%] rounded-xl" src={profPic} alt="" />
 
         <motion.p variants={fadeIn("", "", .1, 1)} className="mt-4 md:ml-0 xl:ml-20 text-white text-[17px] max-w-3xl leading-[30px]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Eius ex perspiciatis molestiae laudantium fugit sequi dignissimos minus officiis 
-          exercitationem iste nostrum necessitatibus, libero laborum error provident iusto unde consequuntur iure?
+          I'm a full-stack web developer from Tucson, AZ with a Bachelor of Science in Business Management. My experience ranges
+          from React/Javascript based web devlopment to data applications and AWS architectures. I love what I do because of the combination
+          of logic and problem solving but also the creativity it requires.
         </motion.p>
       </div>
 
