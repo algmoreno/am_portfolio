@@ -58,7 +58,7 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
+    <div id="contact" className={`max-w-7xl mx-auto relative z-0 xl:mt-12 flex xl:flex-row flex-col-reverse py-0 gap-10 overflow-hidden`}>
       <motion.div variants={slideIn('right', 'tween', .2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[250px]">
         <SaguaroCanvas />
@@ -117,4 +117,4 @@ const Contact = () => {
   )
 }
 
-export default SectionWrapper(Contact, "contact")
+export default Contact
