@@ -18,10 +18,10 @@ const Hero = () => {
           </button>
         </div>
         <div>
-          <h1 style={{ color: light ? 'white' : '#292929' }} className={light ? `${styles.heroHeadText} text-gradient` : `${styles.heroHeadText}`}>
+          <h1 style={{ color: light ? 'white' : '#202020' }} className={light ? `${styles.heroHeadText} text-gradient` : `${styles.heroHeadText}`}>
             Hi, I'm Alan
           </h1>          
-          <p style={{ color: light ? 'white' : '#292929' }} className={light ? "mt-2 text-gradient" : "mt-2"}>
+          <p style={{ color: light ? 'white' : '#202020' }} className={light ? "mt-2 text-gradient" : "mt-2"}>
             This is my bio and I will write about me 
           </p>
         </div>
