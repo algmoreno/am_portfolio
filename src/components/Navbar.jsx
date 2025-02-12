@@ -18,7 +18,7 @@ const Navbar = () => {
               window.scrollTo(0,0)
             }}>
               <img src={logo} alt="logo" className='w-45 h-20 object-contain'/>
-              <p className='text-white text-[18px] font-bold cursor-pointer flex'>Alan Moreno &nbsp;
+              <p className='text-gradient-nav-title text-[18px] font-bold cursor-pointer flex'>Alan Moreno &nbsp;
                 <span className='md:block hidden'> | Software Developer Portfolio</span> 
               </p>
         </Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
               key={Link.id}
               className={`${ active === Link.title
                           ? "text-secondary"
-                          : "text-white"} 
+                          : "text-gradient-nav"} 
                           hover:text-tertiary text-[18px] font-medium cursor-pointer`}>
               <a href={`#${Link.id}`}>{Link.title}</a>
             </li>

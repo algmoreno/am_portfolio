@@ -35,10 +35,15 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.text-gradient {
-  background: linear-gradient(to right, #ffeaad, #202020);
+.text-gradient-nav-title {
+  text-shadow:1px 1px 10px #eeeeee, 1px 1px 1px #000000;
+}
+
+.text-gradient-hero {
+  background: linear-gradient(to right, #fffcf3, #202020);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* text-shadow:0px 0px 10px #d8d8d8, 0px 0px 0px #939393; */
 }
 
 .blue-gradient {

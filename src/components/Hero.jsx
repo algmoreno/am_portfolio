@@ -13,16 +13,16 @@ const Hero = () => {
       <div className={`${styles.paddingX} absolute inset-0 top-[180px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div onMouseEnter={() => {setLight(current => !current)}} onMouseLeave={() => {setLight(current => !current)}} className="flex flex-col justify-center items-center mt-5">
           <button style={light ? {backgroundImage: "linear-gradient(to left, #fcc305 0%, #a15403 100%)"} : 
-            {backgroundColor : "transparent", border: ".5px solid #1f1e1e"}} className={`w-10 h-10 rounded-full`}>
+            {backgroundColor : "transparent", border: ".5px solid #1f1e1e"}} className={`w-12 h-12 rounded-full`}>
             <img className="h-2/5 w-2/5 justify-center items-center mx-auto" src={lightbulb} alt="lightbulb" />
           </button>
         </div>
         <div>
-          <h1 style={{ color: light ? 'white' : '#202020' }} className={light ? `${styles.heroHeadText} text-gradient` : `${styles.heroHeadText}`}>
+          <h1 style={{ color: light ? 'white' : '#202020' }} className={light ? `${styles.heroHeadText} text-gradient-hero` : `${styles.heroHeadText}`}>
             Hi, I'm Alan
           </h1>          
-          <p style={{ color: light ? 'white' : '#202020' }} className={light ? "mt-2 text-gradient" : "mt-2"}>
-            This is my bio and I will write about me 
+          <p style={{ color: light ? 'white' : '#202020' }} className={light ? "mt-2 text-gradient-hero" : "mt-2"}>
+            Welcome to my page
           </p>
         </div>
       </div>

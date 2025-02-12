@@ -102,10 +102,6 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  // {
-  //   name: "Tailwind CSS",
-  //   icon: tailwind,
-  // },
   {
     name: "AWS",
     icon: aws,
@@ -118,6 +114,14 @@ const technologies = [
     name: "Docker",
     icon: docker,
   },
+  // {
+  //   name: "Grafana",
+  //   icon: tailwind,
+  // },
+  // {
+  //   name: "Prometheus",
+  //   icon: tailwind,
+  // },
 ];
 
 const experiences = [
