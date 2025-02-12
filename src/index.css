@@ -35,8 +35,8 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.text-gradient-nav-title {
-  text-shadow:1px 1px 10px #eeeeee, 1px 1px 1px #000000;
+.text-gradient-nav {
+  text-shadow:1px 1px 10px #c5c5c5, 1px 1px 1px #000000;
 }
 
 .text-gradient-hero {
