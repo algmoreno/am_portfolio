@@ -8,7 +8,7 @@ import profPic from '../assets/profPic.jpg'
 
 const ServiceCard = ({ index, title, icon }) => (
 
-  <div className="xs:w-[250px] w-full ">
+  <div className="xs:w-[250px] w-full m-auto ">
       <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)}
                   className="w-full p-[1px] rounded-[20px] shadow-card">
         <div options={{
@@ -39,7 +39,7 @@ const About = () => {
       </motion.div>
       
       <div style={{ flexDirection: 'row'}} className="flex flex-wrap">
-        <img className="sm:h-[40%] sm:w-[100%] md:h-[20%] md:w-[20%] rounded-xl border border-gray-400" src={profPic} alt="" />
+        <img className="sm:h-[40%] sm:w-[100%] md:h-[20%] md:w-[20%] rounded-xl border border-gray-400 shadow-card" src={profPic} alt="" />
 
         <motion.p variants={fadeIn("", "", .1, 1)} className="mt-4 md:ml-0 xl:ml-20 text-white text-[17px] max-w-3xl leading-[30px]">
           I'm a full-stack web developer from Tucson, AZ with a Bachelor of Science in Business Management. My experience ranges
@@ -48,7 +48,7 @@ const About = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 text-center flex flex-wrap gap-10">
+      <div className="mt-20 text-center flex flex-wrap ">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service}/>
         ))}

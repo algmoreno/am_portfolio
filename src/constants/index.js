@@ -58,7 +58,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "AWS Devloper",
+    title: "AWS Developer",
     icon: mobile,
   },
 ];
@@ -134,10 +134,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "January 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Maintained and developed C#/.NET application used for sensor management and data acquisition.",
+      "Collaborated in creating scalable Go/NATS.io based architecture designed to transport sensor data from field to cloud.",
+      "Was responsible for edge server program installations and updates along with managing UI for client data.",
+      "Introduced and encouraged a standard git-based, version-controlled work flow among the engineering team.",
     ],
   },
   // {
