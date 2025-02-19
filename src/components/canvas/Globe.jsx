@@ -52,7 +52,6 @@ const GlobeCanvas = ({ lightOn }) => {
 
   return (  
       <Canvas 
-        frameLoop="demand"
         shadows
         camera={{ position: [30, 10, 45], fov: 10 }}
         gl={{ preserveDrawingBuffer: true }}>

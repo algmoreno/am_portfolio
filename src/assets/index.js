@@ -12,6 +12,8 @@ import natsio from "./tech/natsio.png"
 import csharp from "./tech/csharp.png"
 import dotnet from "./tech/dotnet.png"
 import aws from "./tech/aws.png"
+import grafana from './tech/grafana.png'
+import prometheus from './tech/prometheus.png'
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -38,6 +40,8 @@ import tripguide from "./tripguide.png";
 
 export {
   aws,
+  grafana,
+  prometheus,
   natsio,
   go,
   csharp,

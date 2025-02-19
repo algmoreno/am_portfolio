@@ -29,7 +29,7 @@ const Stars = (props) => {
 const StarsCanvas = () => {
   return (
     <div className="w-full h-auto absolute inset-0 x-[-1]">
-      <Canvas style={{ backgroundColor: '#030303' }} camera= {{ position: [0, 0, 1]}}>
+      <Canvas gl={{ preserveDrawingBuffer: true }} style={{ backgroundColor: '#030303' }} camera= {{ position: [0, 0, 1]}}>
         <Suspense fallback={null}>
           <Stars/>
         </Suspense>

@@ -19,7 +19,7 @@ const Navbar = () => {
             }}>
               <img src={logo} alt="logo" className='w-45 h-20 object-contain'/>
               <p className='text-gradient-nav text-[18px] font-bold cursor-pointer flex'>Alan Moreno &nbsp;
-                <span className='md:block hidden'> | Software Developer Portfolio</span> 
+                <span className='md:block hidden'> | Web Developer Portfolio</span> 
               </p>
         </Link>
         <ul className='list-none hidden sm:flex sm:-px-10 flex-row gap-10'>

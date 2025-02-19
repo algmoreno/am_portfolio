@@ -29,6 +29,8 @@ import {
   csharp,
   dotnet,
   aws,
+  grafana,
+  prometheus,
 } from "../assets";
 
 export const navLinks = [
@@ -114,14 +116,14 @@ const technologies = [
     name: "Docker",
     icon: docker,
   },
-  // {
-  //   name: "Grafana",
-  //   icon: tailwind,
-  // },
-  // {
-  //   name: "Prometheus",
-  //   icon: tailwind,
-  // },
+  {
+    name: "Grafana",
+    icon: grafana,
+  },
+  {
+    name: "Prometheus",
+    icon: prometheus,
+  },
 ];
 
 const experiences = [

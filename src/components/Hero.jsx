@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { GlobeCanvas, TextCanvas } from './canvas';
+import { GlobeCanvas } from './canvas';
 import lightbulb from '../assets/lightbulb.png';
 
 // replace mouse with arrow
@@ -22,12 +22,11 @@ const Hero = () => {
             Hi, I'm Alan
           </h1>          
           <p style={{ color: light ? 'white' : '#202020' }} className={light ? "mt-2 text-gradient-hero" : "mt-2"}>
-            Welcome to my page
+            Welcome to my page!
           </p>
         </div>
       </div>
       <div className="ml-auto inline-bloc flex flex-row h-full w-[50%]">
-          {/* <TextCanvas /> */}
           <GlobeCanvas lightOn={light} />
       </div>
     </section>
