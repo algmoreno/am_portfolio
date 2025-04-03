@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div className={`${styles.paddingX} absolute inset-0 top-[180px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        <div onMouseEnter={() => {setLight(current => !current)}} onMouseLeave={() => {setLight(current => !current)}} className="flex flex-col justify-center items-center mt-5">
+        <div onClick={() => {setLight(current => !current)}} onMouseEnter={() => {setLight(current => !current)}} onMouseLeave={() => {setLight(current => !current)}} className="flex flex-col justify-center items-center mt-5">
           <button style={light ? {backgroundImage: "linear-gradient(to left, #fcc305 0%, #a15403 100%)"} : 
             {backgroundColor : "transparent", border: ".5px solid #1f1e1e"}} className={`w-12 h-12 rounded-full`}>
             <img className="h-2/5 w-2/5 justify-center items-center mx-auto" src={lightbulb} alt="lightbulb" />

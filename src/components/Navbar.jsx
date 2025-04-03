@@ -18,8 +18,8 @@ const Navbar = () => {
               window.scrollTo(0,0)
             }}>
               <img src={logo} alt="logo" className='w-45 h-20 object-contain'/>
-              <p className='text-gradient-nav text-[18px] font-bold cursor-pointer flex'>Alan Moreno &nbsp;
-                <span className='md:block hidden'> | Web Developer Portfolio</span> 
+              <p className='max-sm:hidden text-gradient-nav text-[22px] font-bold cursor-pointer'>Alan Moreno &nbsp;
+                <span className='text-[18px] md:block hidden'> | Web Developer Portfolio</span> 
               </p>
         </Link>
         <ul className='list-none hidden sm:flex sm:-px-10 flex-row gap-10'>
@@ -34,19 +34,19 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img src={toggle ? close : menu}
+        <div className='sm:hidden text-white mr-5 flex flex-1 justify-end items-center'>
+          <img src={menu}
                 alt="menu"   
                 className='w-[28px] h-[28px] object-contain cursor-pointer'
                 onClick={() => setToggle(!toggle)}> 
           </img>
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-width-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-black text-white border absolute top-20 right-0 mx-4 my-2 min-width-[140px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {navLinks.map((Link) => (
                 <li key={Link.id}
                   className={`${ active === Link.title
                               ? "text-white"
-                              : "text-secondary"} 
+                              : "text-white"} 
                               font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
