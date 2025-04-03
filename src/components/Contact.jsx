@@ -19,21 +19,17 @@ const Contact = () => {
     message: ''
   });
 
-  const [loading, setloading] = useState(false);
-
   const handleChange = (e) => {
-    console.log("Change")
     const { name, value } = e.target;
     setForm({...form, [name]: value })
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
 
-    email.js(
+    emailjs.send(
       'service_qjdjgk9',
-      'template_irpu8ds',
+      'template_sdzvutc',
       {
         from_name: form.name,
         to_name: 'Alan',
@@ -42,8 +38,7 @@ const Contact = () => {
         message: form.message,
       }, 'GDA7yUKvlEcVbask0')
       .then(() => {
-        setLoading(false);
-        aert('Thanks I will get back to you');
+        alert('Thanks I will get back to you');
 
         setForm({
           name: '',
@@ -51,7 +46,6 @@ const Contact = () => {
           message: '',
         })
       }, (error) => {
-        setLoading(false);
         console.log(error);
         alert("Something went wrong.")
       })
@@ -77,6 +71,7 @@ const Contact = () => {
                 text="text"
                 name="name"
                 value={form.name}
+                autoComplete="off"
                 onChange={handleChange}
                 placeholder="What's your name?"
                 className="bg-black py-4 px-6 placeholder:text-grey text-white rounded-lg outline-none border-none font-medium"/>
@@ -87,6 +82,7 @@ const Contact = () => {
               <input 
                 text="email"
                 name="email"
+                autoComplete="off"
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your email?"
@@ -98,16 +94,18 @@ const Contact = () => {
               <textarea
                 rows="7"
                 name="message"
+                autoComplete="off"
                 value={form.message}
                 onChange={handleChange}
                 placeholder=". . ."
                 className="bg-black py-4 px-6 placeholder:text-grey text-white rounded-lg outline-none border-none font-medium"/>
           </label>
 
-          <button
+          <button          
             type="submit"
+            onClick={handleSubmit}
             className="bg-black py-2 px-8 outline-none ml-auto w-fit text-white font-bold shadow-md shadow-primary rounded-xl">
-            {loading? "Sending..." : "Send"}
+            Send
           </button>
         </form>
       </motion.div>
