@@ -5,10 +5,7 @@ import { styles } from '../styles';
 import { SaguaroCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
-
-// template_irpu8ds
-// service_qjdjgk9
-// GDA7yUKvlEcVbask0
+import { ToastContainer, toast } from 'react-toastify';
 
 const Contact = () => {
   const formRef = useRef();
@@ -34,11 +31,20 @@ const Contact = () => {
         from_name: form.name,
         to_name: 'Alan',
         from_email: form.email,
-        to_email: 'contact@alanmoreno.com',
+        to_email: 'alg.moreno00@gmail.com',
         message: form.message,
       }, 'GDA7yUKvlEcVbask0')
       .then(() => {
-        alert('Thanks I will get back to you');
+        toast.success('Thanks, I will get back to you!', {
+          position: "bottom-center",
+          autoClose: 3000,
+          hideProgressBar: true,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
 
         setForm({
           name: '',
@@ -47,12 +53,22 @@ const Contact = () => {
         })
       }, (error) => {
         console.log(error);
-        alert("Something went wrong.")
+        toast.error('Something went wrong. Try again.', {
+          position: "bottom-center",
+          autoClose: 3000,
+          hideProgressBar: true,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
       })
   }
 
   return (
     <div id="contact" className={`max-w-7xl mx-auto relative z-0 xl:mt-12 flex xl:flex-row flex-col-reverse py-0 gap-10 overflow-hidden`}>
+      <ToastContainer />
       <motion.div variants={slideIn('right', 'tween', .2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[250px]">
         <SaguaroCanvas />
