@@ -214,7 +214,7 @@ const projects = [
   {
     name: "Yoga Therapy (in progress)",
     description:
-      "Web-based platform for yoga therapy business. Users can schedule appointments and view take-home assignments from teacher.",
+      "Web-based platform for yoga therapy business. Users can learn about yoga therapy, schedule appointments and view take-home assignments from teacher.",
     tags: [
       {
         name: "React",
@@ -238,7 +238,7 @@ const projects = [
   {
     name: "97 Spec.",
     description:
-      "An example ecommerce website that allows users to view and checkout different fragrance products.",
+      "An ecommerce website that allows users to view and checkout different fragrance products.",
     tags: [
       {
         name: "React",
@@ -262,7 +262,7 @@ const projects = [
   {
     name: "Your Website",
     description:
-      "Need a website for personal or business needs? Send me a message.",
+      "Need a website for your business? Send me a message.",
     tags: [
       {
         name: "react",
