@@ -26,7 +26,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="ml-auto inline-bloc flex flex-row h-full w-[50%]">
+      <div className="ml-auto inline-bloc flex flex-row h-full w-[75%]">
           <GlobeCanvas lightOn={light} />
       </div>
     </section>

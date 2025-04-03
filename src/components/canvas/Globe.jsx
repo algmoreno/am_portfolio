@@ -16,15 +16,15 @@ const Globe = ({ lightOn, isMobile }) => {
   return (
     <mesh useRef={globeRef}> 
       <hemisphereLight intensity={.15} groundColor="black" />
-      <directionalLight position={lightOn ? [-40, 10, -5] : [0, 0, 0]} 
+      <directionalLight position={lightOn ? [-40, 10, -25] : [0, 0, 0]} 
                   angle={.12}
                   penumbra={1}
                   intensity={1}
                   castShadow
                   shadow-mapSize={1024}/>
       <primitive object={earth.scene}
-                  scale={isMobile ? 1.1 : 1.5}
-                  position={isMobile ? [.5, -2.5, 0] : [1, -1.5, 0]}
+                  scale={isMobile ? 1.5 : 2}
+                  position={isMobile ? [.2, -2.5, 0] : [1, -1.5, 0]}
                   rotation={[-.1, 0, -.2]}
                   ref={globeRef}
                   />
