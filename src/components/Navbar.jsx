@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { menu, close } from '../assets'
-import logo from '../assets/signature_final_blue.png'
+import logo from '../assets/signature_blue_outline12.png'
 
 const Navbar = () => {
   const [active, setActive] = useState('');

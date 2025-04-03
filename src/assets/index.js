@@ -37,6 +37,8 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import yoga from './yoga.png';
+import nineSevenSpec from './97_spec.png'
 
 export {
   aws,
@@ -75,4 +77,6 @@ export {
   jobit,
   tripguide,
   perceptive,
+  yoga,
+  nineSevenSpec
 };

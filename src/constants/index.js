@@ -31,6 +31,8 @@ import {
   aws,
   grafana,
   prometheus,
+  yoga,
+  nineSevenSpec
 } from "../assets";
 
 export const navLinks = [
@@ -210,30 +212,57 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Yoga Therapy (in progress)",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform for yoga therapy business. Users can schedule appointments and view take-home assignments from teacher.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: yoga,
   },
   {
-    name: "Job IT",
+    name: "97 Spec.",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An example ecommerce website that allows users to view and checkout different fragrance products.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Stripe",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Sanity.io",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nineSevenSpec,
+  },
+  {
+    name: "Your Website",
+    description:
+      "Need a website for personal or business needs? Send me a message.",
     tags: [
       {
         name: "react",
@@ -249,28 +278,6 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
   },
 ];
 
