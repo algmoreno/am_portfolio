@@ -212,7 +212,8 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Yoga Therapy (in progress)",
+    name: "Yoga Business (in progress)",
+    link: "",
     description:
       "Web-based platform for yoga therapy business. Users can learn about yoga therapy, schedule appointments and view take-home assignments.",
     tags: [
@@ -237,8 +238,9 @@ const projects = [
   },
   {
     name: "97 Spec.",
+    link:"https://97spec.vercel.app/",
     description:
-      "An ecommerce website that allows users to view and checkout different fragrance products. Website is for display purposes.",
+      "An e-commerce website that allows users to view and checkout different fragrance products. Website is for display purposes.",
     tags: [
       {
         name: "React",
@@ -261,6 +263,7 @@ const projects = [
   },
   {
     name: "Your Website",
+    link: "",
     description:
       "Need a website for your business? Send me a message.",
     tags: [
