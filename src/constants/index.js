@@ -214,7 +214,7 @@ const projects = [
   {
     name: "Yoga Therapy (in progress)",
     description:
-      "Web-based platform for yoga therapy business. Users can learn about yoga therapy, schedule appointments and view take-home assignments from teacher.",
+      "Web-based platform for yoga therapy business. Users can learn about yoga therapy, schedule appointments and view take-home assignments.",
     tags: [
       {
         name: "React",
@@ -238,7 +238,7 @@ const projects = [
   {
     name: "97 Spec.",
     description:
-      "An ecommerce website that allows users to view and checkout different fragrance products.",
+      "An ecommerce website that allows users to view and checkout different fragrance products. Website is for display purposes.",
     tags: [
       {
         name: "React",
