@@ -264,18 +264,18 @@ const projects = [
     description:
       "Need a website for your business? Send me a message.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      // {
+      //   name: "react",
+      //   color: "blue-text-gradient",
+      // },
+      // {
+      //   name: "html",
+      //   color: "green-text-gradient",
+      // },
+      // {
+      //   name: "css",
+      //   color: "pink-text-gradient",
+      // },
     ],
     image: jobit,
   },
